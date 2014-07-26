@@ -23,7 +23,7 @@ This is a very simple pagination functionality from client side. Just include th
 }
 ```
 ## Example
-To see in detail: 
+<a href="https://github.com/RaD0/simpleJSpagination/tree/master/Example"> Detailed Example </a>
 ```
 <div id="paginatex">
     <div> 

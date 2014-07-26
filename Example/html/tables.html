@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="RaD0" content="">
+
+    <title>JS Pagination Demo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../template/bare/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 70px;
+        }
+        div.row {
+            padding: 10px 0px 10px 0px;
+        }
+
+        table {
+            border: 2px solid #B8A6A6 !important
+        }
+
+        th {
+            background-color: rgb(230, 218, 218);,
+            border: 1px solid #534343
+        }
+        th {
+            text-align: center !important
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand" href="../index.html">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="images.html">Images</a>
+                    </li>
+                    <li>
+                        <a href="tables.html">Tables</a>
+                    </li>
+                    <li>
+                        <a href="content.html">Content</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Simple JavaScript Pagination</h1>
+                <div class="row">
+                    <div id="paginate">
+
+                        <div class="col-md-6 portfolio-item">
+                            <table class="table table-bordered table-striped table-hover ">
+                                <thead>
+                                    <th>Customer Id</th>
+                                    <th>Phone</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AMX-056-RE2</td>
+                                        <td>00-123-6785</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BMX-057-RE3</td>
+                                        <td>044-9080029</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CMY-067-RE4</td>
+                                        <td>647-7788029</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DMZ-077-RE5</td>
+                                        <td>314-2601234</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EMA-097-RE7</td>
+                                        <td>041-8002129</td>
+                                    </tr>                                    
+                                </tbody>
+                            </table>
+                        </div>     
+
+                        <div class="col-md-6 portfolio-item">
+                            <table class="table table-bordered table-striped table-hover ">
+                                <thead>
+                                  <th>Order Date</th>
+                                  <th>Region</th>
+                                  <th>Rep</th>
+                                </thead>
+
+                                <tbody>
+                                  <tr> 
+                                    <td>01/06/2014</td>
+                                    <td>East</td>
+                                    <td>Jones</td>
+                                  </tr>
+                                  <tr>
+                                    <td>01/23/2014</td>
+                                    <td>Central</td>
+                                    <td>Kivell</td>
+                                  </tr>
+                                  <tr> 
+                                    <td>02/09/2014</td>
+                                    <td>Central</td>
+                                    <td>Jardine</td>
+                                  </tr>
+                                  <tr> 
+                                    <td>02/26/2014</td>
+                                    <td>Central</td>
+                                    <td>Gill</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-md-6 portfolio-item">
+                            <table class="table table-bordered table-striped table-hover ">
+                                <thead>
+                                  <th>Item</b></th>
+                                  <th>Units</b></th>
+                                </thead>
+                                <tbody>
+                                  <tr>             
+                                    <td>Pencil</td>
+                                    <td>195</td>
+                                  </tr>
+
+                                  <tr>             
+                                    <td>Binder</td>
+                                    <td>23</td>
+                                  </tr>
+
+                                  <tr>             
+                                    <td>Pen</td>
+                                    <td>180</td>
+                                  </tr>
+
+                                  <tr>             
+                                    <td>Stamp Pad</td>
+                                    <td>50</td>
+                                  </tr>
+
+                                  <tr>             
+                                    <td>Ruler</td>
+                                    <td>80</td>
+                                  </tr>
+
+                                  <tr>             
+                                    <td>Board</td>
+                                    <td>10</td>
+                                  </tr>
+
+                                  <tr>             
+                                    <td>Books</td>
+                                    <td>295</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-md-6 portfolio-item">
+                            <table class="table table-bordered table-striped table-hover ">
+                                <thead>
+                                    <th>OS</th>
+                                    <th>Created By</th>
+                                    <th>Website</th>
+                                </thead>
+                                <tbody>  
+                                    <tr>
+                                        <td>Ubuntu</td>
+                                        <td>Canonical Ltd</td>
+                                        <td>
+                                            <a href="http://www.ubuntu.com/">
+                                                http://www.ubuntu.com/
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Debian</td>
+                                        <td>Ian Murdock</td>
+                                        <td>
+                                            <a href="http://www.debian.org/">
+                                                http://www.debian.org/
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fedora</td>
+                                        <td>Fedora Project(Red Hat)</td>
+                                        <td>
+                                            <a href="http://www.fedoraproject.org/">
+                                                http://www.fedoraproject.org/
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>CentOs</td>
+                                        <td>CentOs Project</td>
+                                        <td>
+                                            <a href="http://www.centos.org/">
+                                                http://www.centos.org/
+                                            </a>
+                                        </td>
+                                    </tr> 
+                                </tbody>                                    
+                            </table>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <button id="previous" class="btn btn-success">Previous</button>
+                <button id="next" class="btn btn-success">Next</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="../template/bare/js/jquery-1.11.0.js"></script>
+
+    <!-- pagination script -->
+    <script src="../js/pagination.js"></script>
+    <script>
+        $(document).ready(function(){
+            Paginate.load({
+                "itemsPerPage": 2,
+                "navCSSDisable": "delta"
+            });
+        });
+    </script>
+
+</body>
+
+</html>

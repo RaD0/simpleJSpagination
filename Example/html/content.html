@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="RaD0" content="">
+
+    <title>JS Pagination Demo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../template/bare/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+    }
+    div.row {
+        padding: 10px 0px 10px 0px;
+    }
+    div.panel-body p{
+        text-align: left;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="images.html">Images</a>
+                    </li>
+                    <li>
+                        <a href="tables.html">Tables</a>
+                    </li>
+                    <li>
+                        <a href="content.html">Content</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Simple JavaScript Pagination</h1>
+                <div class="row">
+                    <div id="paginate">
+                        <div class="col-md-4 portfolio-item">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    The Simpsons
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        The Simpsons is an American animated sitcom created by Matt Groening for the Fox Broadcasting Company. The series is a satirical depiction of a middle class American lifestyle epitomized by its family of the same name, which consists of Homer, Marge, Bart, Lisa, and Maggie. The show is set in the fictional town of Springfield and parodies American culture, society, television, and many aspects of the human condition.
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                        <a href="http://en.wikipedia.org/wiki/The_Simpsons">
+                                            Read more...
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 portfolio-item">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    Samurai Jack
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Samurai Jack is an American animated television series created by Genndy Tartakovsky for Cartoon Network. The series follows time-displaced samurai warrior "Jack" (voiced by Phil LaMarr) in his singular quest to find a method of traveling back in time and defeating the tyrannical demonic wizard Aku (voiced by Mako Iwamatsu). Episode plots range from dark and epic to lighthearted and comic, but often contain little dialogue. Stories instead rely on the series' highly detailed, outline-free, masking-based animation, as well as its cinematic style and pacing. 
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                        <a href="http://en.wikipedia.org/wiki/Samurai_Jack">
+                                            Read more...
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-4 portfolio-item">
+                            <div class="panel panel-danger">
+                                <div class="panel-heading">
+                                    Batman: The Animated Series
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Batman: The Animated Series is an American animated television series based on the DC Comics superhero Batman. The series was produced by Warner Bros. Animation and originally aired on the Fox Network from September 5, 1992 to September 15, 1995. The visual style of the series, dubbed "Dark Deco," was based on the film noir artwork of producer and artist Eric Radomski, although Bruce Timm is often mistakenly given credit for this due to the fact that the characters were based on his designs
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                        <a href="http://en.wikipedia.org/wiki/Batman:_The_Animated_Series">
+                                            Read more...
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 portfolio-item">
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    Speed Racer
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Speed Racer, also known as Mach GoGoGo (マッハGoGoGo Mahha GōGōGō?), is a Japanese anime/manga franchise about automobile racing. Mach GoGoGo was originally serialized in print in Shueisha's 1958 Shōnen Book. It was released in tankōbon book form by Sun Wide Comics, and later re-released in Japan by Fusosha. Adapted into anime by Tatsunoko Productions, its 52 episodes aired on Fuji TV from April 1967 to March 1968. 
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                        <a href="http://en.wikipedia.org/wiki/Speed_Racer">
+                                            Read more...
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 portfolio-item">
+                            <div class="panel panel-warning">
+                                <div class="panel-heading">
+                                    Bleach
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Bleach (ブリーチ Burīchi?) is a Japanese anime series based on the manga of the same name by Tite Kubo. The anime ran for a total of 366 episodes including 111 episodes of original material not based on the manga. Bleach was produced by Studio Pierrot and directed by Noriyuki Abe. Bleach's Japanese and English voice actors include some of the most credited and well known voice actors, including Johnny Yong Bosch. The music was composed by Shirō Sagisu, who also composed the music for Neon Genesis Evangelion.
+                                    </p>
+                                </div>
+                                <div class="panel-footer">
+                                        <a href="http://en.wikipedia.org/wiki/Bleach_(anime)">
+                                            Read more...
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <button id="previous" class="btn btn-success">Previous</button>
+                <button id="next" class="btn btn-success">Next</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="../template/bare/js/jquery-1.11.0.js"></script>
+
+    <!-- pagination script -->
+    <script src="../js/pagination.js"></script>
+    <script>
+        $(document).ready(function(){
+            Paginate.load({
+                "itemsPerPage" : 3
+            });
+        });
+    </script>
+
+</body>
+
+</html>
